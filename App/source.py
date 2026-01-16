@@ -24,13 +24,13 @@ def add(request: Request):
 @app.post("/savedetails", response_class=HTMLResponse)
 def save_details(
     request: Request,
-    name: str = Form(...),
-    email: str = Form(...),
-    address: str = Form(...),
-    number: str = Form(...),
-    college_name: str = Form(...),
-    city: str = Form(...),
-    state: str = Form(...)
+    name: str = Form(),
+    email: str = Form(),
+    address: str = Form(),
+    number: str = Form(),
+    college_name: str = Form(),
+    city: str = Form(),
+    state: str = Form()
 ):
     msg = ""
     try:
